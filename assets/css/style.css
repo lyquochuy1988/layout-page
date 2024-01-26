@@ -742,3 +742,264 @@ table tr td:nth-child(2), table tr td:nth-child(3) {
     margin-right: 1rem;
     background-color: rgb(218, 41, 28);
 }
+
+.ratings-one {
+    display: flex;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    padding-bottom: 16px;
+}
+
+.rating-snapshot h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rating-snapshot p {
+    width: 230px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(51, 51, 51);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.rating-snapshot .progress {
+    display: flex;
+    align-items: center;
+    max-width: 260px;
+}
+
+.primary-rating {
+    font-size: 15px;
+    min-width: 46px;
+}
+
+.progress-bar {
+    width: 100%;
+    max-width: 140px;
+    padding: 5px 10px;
+}
+
+.progress-bar-inner {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+    height: 16px;
+    background-color: rgb(229, 229, 229);
+    box-shadow: rgb(204, 204, 204) 0px 0px;
+}
+
+.progress-bar-bg {
+    display: block;
+    height: 16px;
+    background-color: rgb(255, 171, 0);
+    
+}
+
+.overall-rating h3 {
+    font-size: 16px;
+    font-weight: 600;
+    min-width: 240px;
+}
+
+.review-this-product h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.review-this-product p {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    margin: 7px 0px 5px;
+    padding: 0;
+}
+
+.average-customer-rating {
+    text-align: center;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    padding-bottom: 20px;
+}
+
+.average-customer-rating h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wrap-average {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.wrap-average-rating {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    margin-top: 10px;
+    margin-left: 75px;
+    column-gap: 12px;
+}
+
+.wrap-average-rating-inner {
+    background-color: orange;    
+    width: 100%;
+    height: 16px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+
+.wrap-average-rating-inner .presentation {
+    width: 20%;
+    position: relative;
+    border: 1px solid rgb(222, 215, 215);
+    border-radius: 0px;
+}
+
+.wrap-average-rating-inner .presentation.grey {
+    background: rgb(229, 229, 229);
+}
+
+.double-garage {
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    padding-bottom: 10px;
+}
+
+.double-garage h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.double-garage-first {
+    min-width: 240px;
+    max-width: 260px;
+}
+
+.double-garage-first h3 {
+    margin-bottom: 10px;
+}
+
+.double-garage-first .check-circle {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.double-garage-first .check-circle i {
+    font-size: 26px;
+    color: #5ECDB5;
+}
+
+.double-garage-first .check-circle span {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.double-garage-first p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.double-garage-first p span {
+    font-weight: bold;
+}
+
+.double-garage-first p:last-child {
+    max-width: 200px;
+}
+
+.double-garage-first p:last-child span {
+    font-weight: bold;
+}
+
+.double-garage-second {
+    min-width: 370px;
+}
+
+.double-garage-second p.small {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.double-garage-second p {
+    max-width: 330px;
+    margin-bottom: 14px;
+}
+
+.double-garage-second .recommend  {
+    display: flex;
+    align-items: center;
+}
+
+.double-garage-second .recommend i {
+    padding-right: 8px;
+}
+
+.double-garage-second p.helpful span {
+    margin: 0 5px;
+}
+
+.double-garage-third {
+    margin-top: 20px;
+}
+
+.double-garage-third .wrap-average-rating {
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+
+/* star */
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }
+
+/****** Style Star Rating Widget *****/
+
+/* General styles for the stars container */
+.stars {
+    display: inline-block;
+    font-size: 24px; /* Adjust for desired size */
+    line-height: 1;
+    position: relative; /* For positioning the partial star */
+  }
+  
+  /* Individual star styles */
+[data-rating] {
+    display: inline-block;
+    position: relative;
+    width: 1em;
+    text-decoration: none; /* Remove any default underline */
+    color: #f8e71c; /* Customize the star color */
+  }
+  
+  /* Create the star icon using a pseudo-element */
+[data-rating]:before {
+    font-family: FontAwesome;
+    content: "\f005"; /* Unicode for a filled-in star */
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Style for empty stars */
+[data-rating]:not([data-value]):before {
+    content: "\f089"; /* Unicode for an empty star */
+  }
+  
+  /* Style for the partially filled star */
+  [data-rating][data-value="5"]:before {
+    width: 50%; /* Fill only half of the star */
+  }
